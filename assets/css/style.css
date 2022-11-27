@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "Chillax";
+  src: url("../font/Chillax-Regular.otf"), url("../font/Chillax-Medium.otf"),
+    url("../font/Chillax-Bold.otf") format("opentype");
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+/* navbar */
+.nav-link {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #030910;
+  color: #ffffff;
+}
+
+#jumbotron {
+  padding-top: 40px;
+  height: 500px;
+  background-color: #030910;
+}
+
+.text-header {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-header h1 {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 110%;
+  /* identical to box height, or 53px */
+
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+
+.text-header h1:nth-child(1) {
+  margin-bottom: 28px;
+}
+
+.text-header h1 span {
+  margin-right: 28px;
+}
+
+.text-header h5 {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  /* or 28px */
+
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.swiper {
+  width: 380px;
+  height: 400px;
+  margin-top: 60px;
+}
+
+.swiper-slide {
+  background-image: url("../images/bg-card-skill.png");
+  background-position: cover;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill {
+  width: 100%;
+  padding: 32px 36px;
+  background: rgba(255, 255, 255, 0.2);
+
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  display: inline-block;
+  align-self: flex-end;
+}
+
+.skill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 1px;
+  background: linear-gradient(
+    122.74deg,
+    #ffffff 26.42%,
+    rgba(255, 255, 255, 0) 51.7%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.skill p {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+
+  color: #ffffff;
+  margin: 0;
+}
+
+.skill .cat-skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: #ffffff;
+
+  position: absolute;
+  top: 0;
+  margin-top: -16px;
+  margin-left: -12px;
+}
+
+.gradient-blue {
+  background: linear-gradient(90deg, #456fe8 0%, #19b0ec 100%);
+  border-radius: 20px;
+}
+
+.gradient-red {
+  background: linear-gradient(90deg, #ff0f7b 0%, #f89b29 100%);
+  border-radius: 20px;
+}
+
+.gradient-green {
+  background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+  border-radius: 20px;
+}
+
+/* quote */
+#quote {
+  padding: 280px 0 80px 0;
+  background-color: #050e18;
+}
+
+#quote h1 {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 110%;
+  /* identical to box height, or 110px */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+
+/* project */
+#project {
+  padding-top: 60px;
+  background-color: #030910;
+}
+
+.text-title {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  /* or 38px */
+
+  color: #ffffff;
+  margin-top: 28px;
+}
+
+.title {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  /* or 44px */
+
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+
+.sec-header-project {
+  margin-bottom: 72px;
+}
+
+.banner-project {
+  object-fit: cover;
+  width: 100%;
+}
+
+.banner-project:hover {
+  height: 110%;
+  margin-top: -10%;
+  transition: 0.5s;
+  box-shadow: 0px 4px 60px rgba(61, 99, 212, 0.5);
+}
+
+#project .row,
+#project .col {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* testimonials */
+.sec-header-testimonial {
+  margin-bottom: 40px;
+}
+
+#testimonial {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #050e18;
+}
+
+.card-testimonial {
+  width: 380px;
+  height: 190px;
+  padding: 44px 16px 24px 16px;
+  background: #ffffff;
+  border-radius: 16px;
+  position: relative;
+}
+
+.card-testimonial .img-testimonial {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  object-fit: cover;
+  position: absolute;
+  left: 32px;
+  top: -30px;
+}
+
+.card-testimonial p {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+
+  color: #000000;
+  margin-bottom: 21px;
+}
+
+.card-testimonial h5 {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  color: #000000;
+}
+
+/* footer */
+#footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #030910;
+}
+
+.sec-footer h3 {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
+
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.sec-footer h5 {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  /* identical to box height, or 28px */
+
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.sec-footer h5 span {
+  text-decoration-line: underline;
+}
+
+.sec-footer .link-portfolio {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+}
