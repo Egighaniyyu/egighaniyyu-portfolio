@@ -357,6 +357,234 @@ body {
   gap: 20px;
 }
 
+/*? article page */
+/* jumbotron */
+.hide-focus:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+}
+
+.form-control {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  color: #616161;
+  padding: 16px;
+}
+
+.btn-search {
+  background: linear-gradient(90deg, #456fe8 0%, #19b0ec 100%);
+  border-radius: 32px;
+  padding: 16px 24px;
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.sec-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+/* article today */
+#article-today {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  background-color: #050e18;
+}
+
+.btn-read {
+  background: linear-gradient(90deg, #456fe8 0%, #19b0ec 100%);
+  border-radius: 32px;
+  padding: 16px 24px;
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  text-align: center;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-read:hover {
+  color: #ffffff;
+}
+
+.card-body-highlight .card-title h5 {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  /* or 38px */
+
+  color: #ffffff;
+  margin: 44px 0 20px 0;
+}
+
+.card-body-highlight .card-text p {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  /* or 28px */
+
+  color: #c5c4c4;
+  margin-bottom: 44px;
+}
+
+.card-img-highlight {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.img-article {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cat-article {
+  background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+  border-radius: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+}
+
+.cat-article p {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  color: #ffffff;
+  margin-bottom: 0 !important;
+}
+
+.card-body-right .card-title h5 {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  /* or 29px */
+
+  color: #ffffff;
+  margin: 12px 0 40px 0;
+}
+
+.cat-article-right {
+  background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+  border-radius: 20px;
+  padding: 8px 12px;
+  width: fit-content;
+}
+
+.cat-article-right p {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  color: #ffffff;
+  margin-bottom: 0 !important;
+}
+
+/* all article */
+#all-article {
+  padding-bottom: 100px;
+  background-color: #050e18;
+}
+
+.sec-all-article .text-title {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  /* identical to box height, or 44px */
+
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 72px;
+}
+
+.card-article-all {
+  margin-bottom: 60px;
+}
+
+.card-img-all {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.cat-article-all {
+  background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+  border-radius: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+}
+
+.cat-article-all p {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  color: #ffffff;
+  margin-bottom: 0 !important;
+}
+
+.card-body-all .card-title h5 {
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  /* or 29px */
+
+  color: #ffffff;
+  margin: 32px 0 40px 0;
+}
+
 /* responsive */
 /* screen xl */
 @media (max-width: 1140px) {
@@ -552,6 +780,12 @@ body {
 
 /* screen xs */
 @media (max-width: 375px) {
+  /* header text */
+  /* card skill */
+  /* text header */
+  /* testimonial */
+  /* footer */
+
   .card-testimonial {
     width: 320px;
     height: 130px;
