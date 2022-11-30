@@ -16,6 +16,8 @@
 
     <!-- splide css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 </head>
 
 <body>
@@ -27,7 +29,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <iconify-icon icon="gg:menu-right" style="color: white;"></iconify-icon>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
@@ -45,13 +47,14 @@
         <div class="container">
             <div class="text-header text-center">
                 <h1>Turning your idea to</h1>
-                <h1><span><img src="assets/images/img-pattern-header.png" alt="img pattern"></span>cool product</h1>
+                <h1><span><img src="assets/images/img-pattern-header.png" alt="img pattern" class="img-header"></span>
+                    cool product</h1>
                 <h5>Hi, I am Egi Ghaniyyu, ui ux designer, has an internship experience in start-up and several
                     freelance projects, and right now I am looking forward to collaborate with you!</h5>
             </div>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" style="background-image: url('assets/images/bg-card-skill.png');">
                         <div class="skill">
                             <div class="cat-skill gradient-blue">
                                 Design
@@ -59,7 +62,7 @@
                             <p>UI Designer</p>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" style="background-image: url('assets/images/bg-card-skill.png');">
                         <div class="skill">
                             <div class="cat-skill gradient-red">
                                 Research
@@ -67,7 +70,7 @@
                             <p>UX Research</p>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" style="background-image: url('assets/images/bg-card-skill.png');">
                         <div class="skill">
                             <div class="cat-skill gradient-green">
                                 Coding
@@ -82,9 +85,15 @@
 
     <!-- quote -->
     <section id="quote">
+        <div class="content-swipe">
+            <img src="assets/images/slide-right-4865791-4082883.gif" alt="swipe" width="32px" height="32px">
+            <p>Swipe</p>
+        </div>
         <div class="container">
-            <h1>Make amazing <span><img src="assets/images/img-pattern-qoute1.png" alt="qoute"></span></h1>
-            <h1>Ideas <span><img src="assets/images/img-pattern-qoute2.png" alt="qoute"> for you</span></h1>
+            <h1>Make amazing <span><img src="assets/images/img-pattern-qoute1.png" alt="qoute" class="img-quote"></span>
+            </h1>
+            <h1>Ideas <span><img src="assets/images/img-pattern-qoute2.png" alt="qoute" class="img-quote"> for
+                    you</span></h1>
         </div>
     </section>
 
@@ -93,7 +102,7 @@
         <div class="container sec-header-project">
             <div class="row d-flex align-items-center">
                 <div class="col col-md-6">
-                    <img src="assets/images/img-pattern-product.png" alt="pattern-produt">
+                    <img src="assets/images/img-pattern-product.png" alt="pattern-produt" class="img-project">
                     <h3 class="text-title">Selected project</h3>
                 </div>
                 <div class="col col-md-6">
@@ -102,14 +111,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col col-md-4">
+            <div class="col col-md-4 col-sm-12 col-12">
                 <a href="#"><img src="assets/images/banner-project.png" class="banner-project" alt="banner-project"></a>
             </div>
-            <div class="col col-md-4">
+            <div class="col col-md-4 col-sm-12 col-12">
                 <a href="#"><img src="assets/images/banner-project2.png" class="banner-project"
                         alt="banner-project"></a>
             </div>
-            <div class="col col-md-4">
+            <div class="col col-md-4 col-sm-12 col-12">
                 <a href="#"><img src="assets/images/banner-project.png" class="banner-project" alt="banner-project"></a>
             </div>
         </div>
@@ -120,7 +129,7 @@
         <div class="container sec-header-testimonial">
             <div class="row d-flex align-items-center">
                 <div class="col col-md-6">
-                    <img src="assets/images/img-pattern-testimonial.png" alt="pattern-testimonial">
+                    <img src="assets/images/img-pattern-testimonial.png" alt="pattern-testimonial" class="img-project">
                     <h3 class="text-title">Testimonials</h3>
                 </div>
                 <div class="col col-md-6">
@@ -203,6 +212,7 @@
             type: 'loop',
             drag: 'free',
             arrows: false,
+            pagination: false,
             focus: 'center',
             perPage: 3,
             autoScroll: {
